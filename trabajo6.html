@@ -4,7 +4,195 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tecnologías Emergentes</title>
-    <link rel="stylesheet" href="trabajo6.css">
+    <style>
+        /* --- REINICIO --- */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 2.1;
+            color: #1a3521;
+            background-color: #03cc7c;
+        }
+
+        /* --- NAV --- */
+        nav {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            background-color: #62c3a6;
+            z-index: 1000;
+            box-shadow: 0 7px 5px rgba(0, 0, 0, 0.3);
+        }
+
+        nav ul {
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+            list-style: none;
+            padding: 15px 0;
+            margin: 0;
+            width: 100%;
+        }
+
+        nav li {
+            flex: 1;
+            text-align: center;
+        }
+
+        nav a {
+            display: block;
+            width: 100%;
+            color: rgb(26, 26, 25);
+            text-decoration: none;
+            font-weight: bold;
+            padding: 10px 0;
+            border-radius: 4px;
+            transition: background-color 0.3s ease, color 0.3s ease;
+        }
+
+        nav a:hover {
+            background-color: rgba(39, 231, 22, 0.2);
+            color: #000;
+        }
+
+        /* --- SECCIONES --- */
+        main {
+            padding-top: 100px;
+            text-align: center;
+        }
+
+        section {
+            scroll-margin-top: 100px;
+        }
+
+        .seccion {
+            padding: 50px 20px;
+            margin: 40px auto;
+            max-width: 900px;
+            border-radius: 12px;
+            background-color: rgb(129, 232, 184);
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+        }
+
+        /* --- TABLA HORARIOS --- */
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+        }
+
+        table td, table th {
+            padding: 10px;
+            border: 2px solid #000;
+            text-align: center;
+        }
+
+        table th {
+            background-color: #a0e1c6;
+            font-weight: bold;
+        }
+
+        /* Colores por materia */
+        td[bgcolor="green"] { background-color: #4caf50; color: white; }
+        td[bgcolor="yellow"] { background-color: #ffeb3b; }
+        td[bgcolor="lightblue"] { background-color: #03a9f4; color: white; }
+        td[bgcolor="gold"] { background-color: #ffd700; }
+        td[bgcolor="pink"] { background-color: #ff69b4; color: white; }
+        td[bgcolor="red"] { background-color: #f44336; color: white; }
+        td[bgcolor="aqua"] { background-color: #00ffff; }
+
+        /* --- FORMULARIO --- */
+        form {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 10px;
+            margin-top: 20px;
+        }
+
+        .inputs {
+            padding: 8px;
+            width: 250px;
+            border: 1px solid #000000;
+            border-radius: 5px;
+        }
+
+        button {
+            background-color: #20b2aa;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 6px;
+            cursor: pointer;
+            font-weight: bold;
+            transition: background-color 0.3s ease;
+        }
+
+        button:hover {
+            background-color: #3fa18e;
+        }
+
+        /* --- SECCIONES ESPECIALES --- */
+        .cuento {
+            background-color: #1ebb9e;
+            border-left: 8px solid #000000;
+        }
+
+        .chiste {
+            background-color: #6bd287;
+            border-left: 8px solid #2defcc;
+            font-size: 1.1em;
+        }
+
+        .refran {
+            background-color: #0fefb7;
+            border-left: 8px solid #15fd85;
+            font-style: italic;
+        }
+
+        /* --- TITULOS --- */
+        h2 {
+            text-align: center;
+            margin-bottom: 10px;
+            font-size: 2.5rem;
+            color: rgb(8, 8, 8);
+            border-bottom: 2px solid rgb(0, 0, 0);
+            padding-bottom: 10px;
+        }
+
+        h3 {
+            color: rgb(44, 1, 41);
+            margin-bottom: 10px;
+        }
+
+        /* --- FOOTER --- */
+        footer {
+            margin-top: 40px;
+            padding: 20px;
+            background-color: #20b2aa;
+            color: white;
+            text-align: center;
+            border-top: 4px solid #17a589;
+        }
+
+        .tema-card {
+            transition: transform 0.3s ease;
+        }
+
+        .tema-card:hover {
+            transform: translateY(-15px);
+        }
+    </style>
 </head>
 <body>
     <!-- NAV -->
@@ -22,7 +210,6 @@
         <section id="sec1" class="seccion tema-card">
             <h1>Datos personales</h1>
             <h1><tt>TECNOLOGÍAS EMERGENTES 02/2025</tt></h1>
-
             <h2>NOMBRES: <ins>Elvis Rubén</ins></h2>
             <h2>APELLIDOS: <del>Choque Paredes</del></h2>
             <h2>SEMESTRE: <ins>4° Semestre</ins></h2>
