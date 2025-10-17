@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tecnologías Emergentes</title>
+    <link rel="stylesheet" href="trabajo6.css">
+</head>
+<body>
+    <!-- NAV -->
+    <nav>
+        <ul>
+            <li><a href="#sec1">INICIO</a></li>
+            <li><a href="#sec2">HORARIOS</a></li>
+            <li><a href="#sec3">FORMULARIOS</a></li>
+            <li><a href="#sec4">DATOS EXTRA</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <!-- SECCIÓN 1: DATOS PERSONALES -->
+        <section id="sec1" class="seccion tema-card">
+            <h1>Datos personales</h1>
+            <h1><tt>TECNOLOGÍAS EMERGENTES 02/2025</tt></h1>
+
+            <h2>NOMBRES: <ins>Elvis Rubén</ins></h2>
+            <h2>APELLIDOS: <del>Choque Paredes</del></h2>
+            <h2>SEMESTRE: <ins>4° Semestre</ins></h2>
+            <h2>SEXO: <del>M</del></h2>
+            <h2>FECHA DE NACIMIENTO: <ins>12/08/2005</ins></h2>
+            <h2>CI: <del>14179294</del></h2>
+            <h2>NACIONALIDAD: <ins>Bolivia</ins></h2>
+            <h2>ESTADO CIVIL: <del>Soltero</del></h2>
+            <h2>EDAD: <ins>20</ins></h2>
+        </section>
+
+        <!-- SECCIÓN 2: HORARIOS -->
+        <section id="sec2" class="seccion tema-card">
+            <h1>Horarios</h1>
+            <table border="10" align="center">
+                <tr align="center">
+                    <td>Horas</td>
+                    <td bgcolor="#FFFFFF">Lunes</td>
+                    <td>Martes</td>
+                    <td bgcolor="#FFFFFF">Miércoles</td>
+                    <td>Jueves</td>
+                    <td bgcolor="#FFFFFF">Viernes</td>
+                    <td>Sábado</td>
+                    <td>Domingo</td>
+                </tr>
+                <tr>
+                    <td>07:45-08:30</td>
+                    <td></td><td></td><td></td>
+                    <td bgcolor="green">SIS415</td>
+                    <td rowspan="17" bgcolor="yellow"><center><h2>TRABAJO</h2></center></td>
+                    <td rowspan="17" bgcolor="lightblue" colspan="2"><center><h1>LIBRE</h1></center></td>
+                </tr>
+                <tr><td>08:30-09:15</td><td></td><td></td><td></td><td bgcolor="green">SIS415</td></tr>
+                <tr><td>09:15-10:00</td><td></td><td></td><td></td><td bgcolor="green">SIS415</td></tr>
+                <tr><td>10:00-10:45</td><td></td><td bgcolor="gold">SIS443</td><td bgcolor="pink">SIS421</td><td bgcolor="red">SIS414</td></tr>
+                <tr><td>10:45-11:30</td><td></td><td bgcolor="gold">SIS443</td><td bgcolor="pink">SIS421</td><td bgcolor="red">SIS414</td></tr>
+                <tr><td>11:30-12:15</td><td></td><td bgcolor="gold">SIS443</td><td bgcolor="pink">SIS421</td><td></td></tr>
+                <tr><td>14:00-14:45</td><td></td><td></td><td bgcolor="aqua">SIS416</td><td></td></tr>
+                <tr><td>14:45-15:30</td><td></td><td></td><td bgcolor="aqua">SIS416</td><td></td></tr>
+                <tr><td>15:30-16:15</td><td></td><td></td><td bgcolor="aqua">SIS416</td><td></td></tr>
+                <tr><td>16:15-17:00</td><td bgcolor="green">SIS415</td><td bgcolor="red">SIS414</td><td bgcolor="red">SIS414</td><td bgcolor="gold">SIS443</td></tr>
+                <tr><td>17:00-17:45</td><td bgcolor="green">SIS415</td><td bgcolor="red">SIS414</td><td bgcolor="red">SIS414</td><td bgcolor="gold">SIS443</td></tr>
+                <tr><td>17:45-18:30</td><td bgcolor="green">SIS415</td><td bgcolor="red">SIS414</td><td bgcolor="red">SIS414</td><td bgcolor="gold">SIS443</td></tr>
+                <tr><td>18:30-19:15</td><td bgcolor="lightblue">SIS420</td><td bgcolor="aqua">SIS416</td><td bgcolor="lightblue">SIS420</td><td bgcolor="pink">SIS421</td></tr>
+                <tr><td>19:15-20:00</td><td bgcolor="lightblue">SIS420</td><td bgcolor="aqua">SIS416</td><td bgcolor="lightblue">SIS420</td><td bgcolor="pink">SIS421</td></tr>
+                <tr><td>20:00-20:45</td><td bgcolor="lightblue">SIS420</td><td bgcolor="aqua">SIS416</td><td bgcolor="lightblue">SIS420</td><td bgcolor="pink">SIS421</td></tr>
+                <tr><td>20:45-21:30</td><td></td><td></td><td></td><td></td></tr>
+                <tr><td>21:30-22:15</td><td></td><td></td><td></td><td></td></tr>
+            </table>
+        </section>
+
+        <!-- SECCIÓN 3: FORMULARIOS -->
+        <section id="sec3" class="seccion tema-card">
+            <h1>Formulario</h1>
+            <form>
+                <input class="inputs" type="text" name="nombre" placeholder="Elvis Rubén" required>
+                <input class="inputs" type="text" name="apellidos" placeholder="Choque Paredes" required>
+                <input class="inputs" list="ciudades" id="ciudad" name="ciudad" placeholder="Ciudad" required>
+                <datalist id="ciudades">
+                    <option value="La Paz"></option>
+                    <option value="Cochabamba"></option>
+                    <option value="Chuquisaca"></option>
+                    <option value="Santa Cruz"></option>
+                    <option value="Potosí"></option>
+                    <option value="Tarija"></option>
+                    <option value="Oruro"></option>
+                    <option value="Pando"></option>
+                    <option value="Beni"></option>
+                </datalist>
+                <input class="inputs" type="date" required>
+                <input class="inputs" type="time" required>
+                <input class="inputs" type="email" name="email" placeholder="elvisrubenchoqueparedes513@gmail.com" required>
+                <input class="inputs" type="number" name="number" placeholder="73328881" required>
+                <button type="submit">Enviar</button>
+            </form>
+        </section>
+
+        <!-- SECCIÓN 4: OTROS DATOS -->
+        <section id="sec4" class="seccion tema-card">
+            <h1>Otros Datos</h1>
+            <p>
+                Información adicional sobre el estudiante o actividades de interés podrá agregarse aquí.
+            </p>
+        </section>
+    </main>
+
+    <!-- PIE DE PÁGINA -->
+    <footer>
+        Ingenieria de Sistemas - Sede Tupiza <br>
+        TODOS LOS DERECHOS RESERVADOS ©2025 <br>
+        &copy; 2024 Tecnologías Emergentes
+    </footer>
+</body>
+</html>
